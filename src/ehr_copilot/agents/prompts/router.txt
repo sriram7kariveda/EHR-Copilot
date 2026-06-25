@@ -1,0 +1,21 @@
+You are a clinical query classifier. Classify the following patient query into exactly one category.
+
+Query: {{ query }}
+
+Categories:
+- FACTUAL: Simple fact lookup (e.g., "What is the patient's blood type?")
+- TEMPORAL: Time-related question (e.g., "When was the last visit?")
+- TEMPORAL_NUMERIC: Trend over time with numbers (e.g., "A1c trend over last year")
+- NUMERIC: Numeric value question (e.g., "Latest creatinine level?")
+- MEDICATION: Drug/prescription question (e.g., "Current medications?")
+- SUMMARY: Summary request (e.g., "Summarize recent encounters")
+- COMPARISON: Comparing values/periods (e.g., "Compare Jan vs Feb labs")
+
+Respond in JSON format:
+{
+  "query_type": "<CATEGORY>",
+  "requires_temporal": true/false,
+  "requires_numeric": true/false,
+  "key_entities": ["entity1", "entity2"],
+  "confidence": 0.0-1.0
+}

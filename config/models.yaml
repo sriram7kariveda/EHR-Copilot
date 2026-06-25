@@ -1,0 +1,23 @@
+models:
+  llm:
+    qwen2_5_7b:
+      provider: "ollama"
+      name: "qwen2.5:7b-instruct"
+      context_window: 131072
+      description: "128K context, strong clinical reasoning"
+      parameters:
+        temperature: 0.1
+        top_p: 0.9
+        repeat_penalty: 1.1
+
+  embeddings:
+    pubmedbert:
+      name: "NeuML/pubmedbert-base-embeddings"
+      dimension: 768
+      max_seq_length: 512
+      description: "PubMedBERT fine-tuned for clinical text embeddings"
+
+  reranker:
+    cross_encoder:
+      name: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+      description: "Lightweight cross-encoder for passage reranking"

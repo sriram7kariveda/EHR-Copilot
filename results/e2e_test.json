@@ -1,0 +1,108 @@
+{
+  "patient": {
+    "patient_id": "28dcf33b-0c52-587f-83ad-2a3270976719",
+    "display_name": "Patient_10007795",
+    "chunk_count": 37,
+    "resource_counts": {
+      "encounters": 8,
+      "conditions": 76,
+      "labs": 885,
+      "vitals": 40,
+      "medication_requests": 224,
+      "procedures": 17
+    },
+    "session_id": "cef6d2e0-c2cf-4193-8378-a0b358f55e2e"
+  },
+  "queries": [
+    {
+      "query": "What are the patient's active diagnoses?",
+      "type": "FACTUAL",
+      "verdict": "revised",
+      "confidence": 0.0,
+      "citations": 7,
+      "pipeline_ms": 23965.04,
+      "wall_time_s": 59.57,
+      "answer_length": 696,
+      "answer_preview": "Based on the available evidence, the patient's active diagnoses appear to include:\n\n1. Other acute pain [33819]\n2. Secondary diabetes mellitus without mention of complication, not stated as uncontrolled, or unspecified [24900]\n3. Colostomy status [V443]\n4. Personal history of malignant neoplasm of b"
+    },
+    {
+      "query": "What medications is this patient currently taking?",
+      "type": "MEDICATION",
+      "verdict": "revised",
+      "confidence": 0.0,
+      "citations": 1,
+      "pipeline_ms": 35869.12,
+      "wall_time_s": 87.48,
+      "answer_length": 606,
+      "answer_preview": "Based on the available evidence, I cannot provide a complete and accurate list of current medications. The medication records provided are truncated and incomplete. From the fragmentary evidence available, some medications that appear to be marked as [completed] include: HYDROmorphone (Dilaudid) in "
+    },
+    {
+      "query": "What are the most recent laboratory results?",
+      "type": "FACTUAL",
+      "verdict": "revised",
+      "confidence": 0.0,
+      "citations": 1,
+      "pipeline_ms": 34602.73,
+      "wall_time_s": 92.95,
+      "answer_length": 676,
+      "answer_preview": "Based on the available evidence, the most recent laboratory results that can be verified are from **2136-09-23** [1]:\n\n**Complete Blood Count:**\n- White Blood Cells: 8.5 K/uL\n- Hemoglobin: 12.3 g/dL\n- Hematocrit: 38%\n- MCV: 85 fL\n- MCH: 27.5 pg\n- Platelet Count: 234 K/uL\n\n**Note:** Additional labora"
+    },
+    {
+      "query": "Has the patient's hemoglobin changed over time?",
+      "type": "TEMPORAL",
+      "verdict": "revised",
+      "confidence": 0.0,
+      "citations": 1,
+      "pipeline_ms": 51227.28,
+      "wall_time_s": 96.2,
+      "answer_length": 661,
+      "answer_preview": "Yes, the patient's hemoglobin has changed over time.\n\nThe hemoglobin values show a notable pattern:\n- **Mid-April 2136**: Started at 9.0 g/dL (2136-04-15) and declined to 8.2 g/dL (2136-04-17) [4][2]\n- **Late April to Early May 2136**: Remained low at 7.6 g/dL (2136-05-02) [6]\n- **Early May 2136**: "
+    },
+    {
+      "query": "What procedures has the patient undergone?",
+      "type": "FACTUAL",
+      "verdict": "revised",
+      "confidence": 0.0,
+      "citations": 1,
+      "pipeline_ms": 27534.4,
+      "wall_time_s": 49.92,
+      "answer_length": 1103,
+      "answer_preview": "Based on the provided evidence, the patient has undergone the following procedures:\n\n**From April 2136 encounter [3]:**\n- Diagnostic ultrasound of digestive system (2136-04-13)\n- Other operations on intestines (2136-04-17)\n- Percutaneous abdominal drainage (2136-04-19)\n[Note: Evidence chunk [3] indi"
+    },
+    {
+      "query": "Are there any abnormal lab values that need attention?",
+      "type": "NUMERIC",
+      "error": "timed out"
+    },
+    {
+      "query": "Summarize the patient's most recent hospital encounter.",
+      "type": "SUMMARY",
+      "verdict": "revised",
+      "confidence": 0.0,
+      "citations": 3,
+      "pipeline_ms": 36393.35,
+      "wall_time_s": 90.94,
+      "answer_length": 626,
+      "answer_preview": "Based on the provided evidence, the patient's most recent documented encounter is from 2136-09-22 (September 22, 2136). The encounter resulted in a diagnosis of ABDOMINAL PAIN LLQ (lower left quadrant) [5].\n\nLaboratory studies from 2136-09-22 [2] show:\n- Complete blood count with white blood cells o"
+    },
+    {
+      "query": "What is the patient's cardiac risk based on available data?",
+      "type": "REASONING",
+      "error": "timed out"
+    }
+  ],
+  "audit": null,
+  "summary": {
+    "patient": "Patient_10007795",
+    "chunks": 37,
+    "load_time_s": 11.87,
+    "queries_run": 6,
+    "avg_pipeline_ms": 34932,
+    "avg_citations": 2.3,
+    "verdicts": {
+      "approved": 0,
+      "revised": 6,
+      "abstained": 0
+    }
+  }
+}

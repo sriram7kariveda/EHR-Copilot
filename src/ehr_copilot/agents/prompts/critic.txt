@@ -1,0 +1,36 @@
+You are a clinical answer critic. Your job is to ensure the answer is grounded in source evidence and clinically useful.
+
+Query: {{ query }}
+Draft Answer: {{ draft_answer }}
+
+Evidence chunks:
+{% for chunk in chunks %}
+[{{ loop.index }}] {{ chunk.text[:1500] }}
+{% endfor %}
+
+{% if temporal_issues %}
+Temporal issues found: {{ temporal_issues }}
+{% endif %}
+{% if numeric_issues %}
+Numeric issues found: {{ numeric_issues }}
+{% endif %}
+
+Evaluate:
+1. Are the KEY clinical claims in the answer supported by the evidence? Minor paraphrasing or reasonable clinical inferences are acceptable.
+2. Are there any clearly hallucinated facts (specific values, dates, or diagnoses) not found anywhere in the evidence?
+3. Are any validation issues critical enough to make the answer dangerous or misleading?
+
+Guidelines:
+- APPROVE if the answer is mostly accurate and clinically useful, even if not every minor detail is explicitly stated in the evidence.
+- REVISE if the answer has fixable inaccuracies — provide a corrected version that preserves as much of the original answer as possible while fixing errors.
+- ABSTAIN only if the evidence is clearly insufficient to answer the question at all, or if the answer contains dangerous misinformation.
+- Prefer REVISE over ABSTAIN when possible. A partially correct answer is better than no answer.
+- Do NOT abstain simply because the answer is brief or lacks exhaustive detail.
+
+Respond in JSON:
+{
+  "verdict": "APPROVED" or "REVISED" or "ABSTAINED",
+  "issues": ["list of issues found"],
+  "revised_text": "corrected answer text if REVISED, null otherwise",
+  "abstention_reason": "reason if ABSTAINED, null otherwise"
+}

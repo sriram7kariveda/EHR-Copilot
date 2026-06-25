@@ -1,0 +1,668 @@
+{
+  "patients_evaluated": 10,
+  "queries_per_patient": 8,
+  "patient_results": [
+    {
+      "patient_id": "28dcf33b-0c52-587f-83ad-2a3270976719",
+      "patient_name": "Patient_10007795",
+      "chunks": 40,
+      "resources": {
+        "encounters": 8,
+        "conditions": 76,
+        "labs": 885,
+        "vitals": 40,
+        "medication_requests": 224,
+        "procedures": 17
+      },
+      "load_time_s": 13.5,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "timed out"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "timed out"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "74a2fd87-885b-5eca-9f8b-9141915dba51",
+      "patient_name": "Patient_10007928",
+      "chunks": 14,
+      "resources": {
+        "encounters": 3,
+        "conditions": 21,
+        "labs": 359,
+        "vitals": 20,
+        "medication_requests": 53,
+        "procedures": 1
+      },
+      "load_time_s": 6.64,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "51d2190c-cc46-56c5-b2ea-363895cbea75",
+      "patient_name": "Patient_10009628",
+      "chunks": 15,
+      "resources": {
+        "encounters": 2,
+        "conditions": 8,
+        "labs": 387,
+        "vitals": 0,
+        "medication_requests": 145,
+        "procedures": 3
+      },
+      "load_time_s": 6.4,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "c4c29979-f2f5-56db-af5b-1715887727b8",
+      "patient_name": "Patient_10011398",
+      "chunks": 12,
+      "resources": {
+        "encounters": 2,
+        "conditions": 10,
+        "labs": 302,
+        "vitals": 0,
+        "medication_requests": 77,
+        "procedures": 3
+      },
+      "load_time_s": 5.23,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "b410dd44-7d65-56f9-974f-2751e8aa80e2",
+      "patient_name": "Patient_10004457",
+      "chunks": 35,
+      "resources": {
+        "encounters": 8,
+        "conditions": 73,
+        "labs": 572,
+        "vitals": 15,
+        "medication_requests": 151,
+        "procedures": 14
+      },
+      "load_time_s": 10.97,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "a3a12d01-dc21-565b-89e2-da60e7fc80dc",
+      "patient_name": "Patient_10003046",
+      "chunks": 11,
+      "resources": {
+        "encounters": 2,
+        "conditions": 4,
+        "labs": 224,
+        "vitals": 0,
+        "medication_requests": 60,
+        "procedures": 3
+      },
+      "load_time_s": 5.09,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "807d2a03-9c57-55e3-a443-09fc8f1de866",
+      "patient_name": "Patient_10014078",
+      "chunks": 11,
+      "resources": {
+        "encounters": 3,
+        "conditions": 8,
+        "labs": 251,
+        "vitals": 5,
+        "medication_requests": 53,
+        "procedures": 4
+      },
+      "load_time_s": 4.73,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "77e10fd0-6a1c-5547-a130-fae1341acf36",
+      "patient_name": "Patient_10003400",
+      "chunks": 115,
+      "resources": {
+        "encounters": 15,
+        "conditions": 166,
+        "labs": 3613,
+        "vitals": 255,
+        "medication_requests": 632,
+        "procedures": 25
+      },
+      "load_time_s": 30.97,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "aeda7084-be35-510e-b171-f00596aed99f",
+      "patient_name": "Patient_10020187",
+      "chunks": 27,
+      "resources": {
+        "encounters": 6,
+        "conditions": 18,
+        "labs": 550,
+        "vitals": 90,
+        "medication_requests": 84,
+        "procedures": 2
+      },
+      "load_time_s": 7.1,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    },
+    {
+      "patient_id": "5f3dcdb5-bd27-58f5-b990-859b6bcc2d73",
+      "patient_name": "Patient_10038999",
+      "chunks": 31,
+      "resources": {
+        "encounters": 5,
+        "conditions": 26,
+        "labs": 892,
+        "vitals": 60,
+        "medication_requests": 130,
+        "procedures": 10
+      },
+      "load_time_s": 8.02,
+      "rag_results": [
+        {
+          "query": "What are the patient's diagnoses from their most recent encounter?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What medications is this patient currently prescribed?",
+          "query_type": "MEDICATION",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What are the most recent lab results for this patient?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What procedures has this patient undergone?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Summarize the patient's clinical history across all encounters.",
+          "query_type": "SUMMARY",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What is the patient's genetic risk for Alzheimer's disease?",
+          "query_type": "REASONING",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "What imaging studies has the patient had and what were the findings?",
+          "query_type": "FACTUAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        {
+          "query": "Has the patient's kidney function changed over time?",
+          "query_type": "TEMPORAL",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ],
+      "oneshot_results": []
+    }
+  ],
+  "metrics": {
+    "rag": {
+      "count": 80,
+      "errors": 80,
+      "avg_latency_ms": 0,
+      "median_latency_ms": 0,
+      "avg_citations": 0,
+      "avg_answer_length": 0,
+      "abstention_rate": 0.0,
+      "verdicts": {
+        "unknown": 80
+      }
+    },
+    "one_shot": {
+      "count": 0,
+      "errors": 0,
+      "avg_latency_ms": 0,
+      "median_latency_ms": 0,
+      "avg_citations": 0,
+      "avg_answer_length": 0,
+      "abstention_rate": 0,
+      "verdicts": {}
+    },
+    "comparison": {
+      "latency_ratio": 0,
+      "rag_citation_coverage": 0,
+      "rag_abstention_accuracy": 0.0,
+      "oneshot_abstention_accuracy": 0.0,
+      "rag_avg_quality_score": 0,
+      "oneshot_avg_quality_score": 0,
+      "rag_avg_faithfulness": 0,
+      "oneshot_avg_faithfulness": 0
+    },
+    "rag_by_query_type": {
+      "FACTUAL": {
+        "count": 40,
+        "errors": 40,
+        "avg_latency_ms": 0,
+        "avg_citations": 0,
+        "abstention_rate": 0,
+        "avg_quality_score": 0
+      },
+      "MEDICATION": {
+        "count": 10,
+        "errors": 10,
+        "avg_latency_ms": 0,
+        "avg_citations": 0,
+        "abstention_rate": 0,
+        "avg_quality_score": 0
+      },
+      "REASONING": {
+        "count": 10,
+        "errors": 10,
+        "avg_latency_ms": 0,
+        "avg_citations": 0,
+        "abstention_rate": 0,
+        "avg_quality_score": 0
+      },
+      "SUMMARY": {
+        "count": 10,
+        "errors": 10,
+        "avg_latency_ms": 0,
+        "avg_citations": 0,
+        "abstention_rate": 0,
+        "avg_quality_score": 0
+      },
+      "TEMPORAL": {
+        "count": 10,
+        "errors": 10,
+        "avg_latency_ms": 0,
+        "avg_citations": 0,
+        "abstention_rate": 0,
+        "avg_quality_score": 0
+      }
+    },
+    "oneshot_by_query_type": {}
+  },
+  "cost_summary": {
+    "total_eval_cost_usd": 0.0,
+    "total_rag_cost_usd": 0,
+    "total_oneshot_cost_usd": 0,
+    "avg_rag_query_cost_usd": 0,
+    "avg_oneshot_query_cost_usd": 0,
+    "cost_tracker_state": {
+      "total_cost_usd": 0.0,
+      "budget_usd": 5.0,
+      "budget_remaining_usd": 5.0,
+      "total_calls": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "patient_id": "patient-001",
+  "expected_events": [
+    {
+      "event_type": "condition_onset",
+      "description": "Type 2 diabetes mellitus",
+      "timestamp": "2018-05-10T00:00:00Z"
+    },
+    {
+      "event_type": "medication_start",
+      "description": "Metformin hydrochloride 500 MG Oral Tablet",
+      "timestamp": "2018-05-10T00:00:00Z"
+    },
+    {
+      "event_type": "condition_onset",
+      "description": "Essential hypertension",
+      "timestamp": "2019-08-22T00:00:00Z"
+    },
+    {
+      "event_type": "medication_start",
+      "description": "Lisinopril 10 MG Oral Tablet",
+      "timestamp": "2019-08-22T00:00:00Z"
+    },
+    {
+      "event_type": "encounter",
+      "description": "Encounter for check up",
+      "timestamp": "2024-01-15T10:00:00Z"
+    },
+    {
+      "event_type": "lab_result",
+      "description": "Hemoglobin A1c/Hemoglobin.total in Blood",
+      "value": "7.2",
+      "unit": "%",
+      "timestamp": "2024-01-15T10:30:00Z"
+    },
+    {
+      "event_type": "lab_result",
+      "description": "Glucose [Mass/volume] in Blood",
+      "value": "145",
+      "unit": "mg/dL",
+      "timestamp": "2024-01-15T10:30:00Z"
+    },
+    {
+      "event_type": "encounter",
+      "description": "Encounter for check up",
+      "timestamp": "2024-06-20T09:00:00Z"
+    },
+    {
+      "event_type": "lab_result",
+      "description": "Hemoglobin A1c/Hemoglobin.total in Blood",
+      "value": "6.8",
+      "unit": "%",
+      "timestamp": "2024-06-20T09:30:00Z"
+    }
+  ],
+  "expected_qa": [
+    {
+      "question": "What is the patient's A1c trend?",
+      "expected_answer_contains": ["7.2", "6.8", "improving", "decreased"],
+      "query_type": "temporal_numeric"
+    },
+    {
+      "question": "What medications is the patient currently taking?",
+      "expected_answer_contains": ["Metformin", "Lisinopril"],
+      "query_type": "medication"
+    },
+    {
+      "question": "What are the patient's active conditions?",
+      "expected_answer_contains": ["diabetes", "hypertension"],
+      "query_type": "factual"
+    }
+  ]
+}

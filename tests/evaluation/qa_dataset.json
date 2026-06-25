@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What are the patient's active conditions?",
+    "expected_answer_contains": ["diabetes", "hypertension"],
+    "query_type": "factual",
+    "should_abstain": false,
+    "ground_truth_citations": ["condition-001", "condition-002"]
+  },
+  {
+    "question": "What is the patient's most recent Hemoglobin A1c value?",
+    "expected_answer_contains": ["6.8", "%"],
+    "query_type": "numeric",
+    "should_abstain": false,
+    "ground_truth_citations": ["observation-002"]
+  },
+  {
+    "question": "How has the patient's A1c changed over the past year?",
+    "expected_answer_contains": ["7.2", "6.8", "decreased"],
+    "query_type": "temporal_numeric",
+    "should_abstain": false,
+    "ground_truth_citations": ["observation-001", "observation-002"]
+  },
+  {
+    "question": "What medications is the patient currently taking?",
+    "expected_answer_contains": ["Metformin", "Lisinopril"],
+    "query_type": "medication",
+    "should_abstain": false,
+    "ground_truth_citations": ["medication-001", "medication-002"]
+  },
+  {
+    "question": "When was the patient's last ambulatory encounter?",
+    "expected_answer_contains": ["2024-06-20", "June"],
+    "query_type": "temporal",
+    "should_abstain": false,
+    "ground_truth_citations": ["encounter-002"]
+  },
+  {
+    "question": "What was the patient's blood glucose level?",
+    "expected_answer_contains": ["145", "mg/dL"],
+    "query_type": "numeric",
+    "should_abstain": false,
+    "ground_truth_citations": ["observation-003"]
+  },
+  {
+    "question": "What is the dosage of the patient's Metformin?",
+    "expected_answer_contains": ["500", "twice daily"],
+    "query_type": "medication",
+    "should_abstain": false,
+    "ground_truth_citations": ["medication-001"]
+  },
+  {
+    "question": "When was the patient diagnosed with Type 2 diabetes?",
+    "expected_answer_contains": ["2018"],
+    "query_type": "temporal",
+    "should_abstain": false,
+    "ground_truth_citations": ["condition-001"]
+  },
+  {
+    "question": "What was the patient's ejection fraction on the last echocardiogram?",
+    "expected_answer_contains": [],
+    "query_type": "numeric",
+    "should_abstain": true,
+    "ground_truth_citations": []
+  },
+  {
+    "question": "Has the patient ever had a colonoscopy?",
+    "expected_answer_contains": [],
+    "query_type": "factual",
+    "should_abstain": true,
+    "ground_truth_citations": []
+  }
+]

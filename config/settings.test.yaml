@@ -1,0 +1,26 @@
+app:
+  name: "EHR Copilot Test"
+  debug: true
+
+llm:
+  provider: "mock"
+  timeout_seconds: 10
+
+embedding:
+  model: "NeuML/pubmedbert-base-embeddings"
+  dimension: 768
+  batch_size: 8
+  device: "cpu"
+
+indexing:
+  retrieval:
+    top_k_dense: 5
+    top_k_sparse: 5
+    final_top_k: 3
+
+audit:
+  db_path: ":memory:"
+  enabled: true
+
+logging:
+  level: "DEBUG"
