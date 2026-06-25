@@ -4,6 +4,8 @@ EHR-Copilot was built as a Master's Project for the MS in General Engineering pr
 
 The system outperforms frontier LLM baselines (GPT-5, Claude Sonnet 4.5, Gemini 3 Pro, GLM 4.6) on entity-level clinical QA, reaching Entity F1 = 0.752 with 100% abstention accuracy and an 8.2% hallucination rate, while running entirely on hospital-controlled infrastructure with no PHI leaving the local environment.
 
+*Note: Core development of this project took place during Spring 2026 as part of SJSU ENGR 295 (Master's Project). The report, IEEE paper, and presentation materials were added to this repository afterward for portfolio purposes.*
+
 ## Contributors
 
 This was a collaborative effort across all stages of the project — architecture design, retrieval pipeline, multi-agent reasoning, MARL training, evaluation, and the final report/paper.
